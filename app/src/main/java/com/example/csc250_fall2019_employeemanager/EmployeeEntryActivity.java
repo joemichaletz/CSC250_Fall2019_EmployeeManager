@@ -37,6 +37,7 @@ public class EmployeeEntryActivity extends AppCompatActivity
         int height_inches = Integer.parseInt(this.height_inchesET.getText().toString());
 
         Core.theEmployee = new Employee(fname, lname, height_feet, height_inches, age, weight);
+        Core.theEmployees.add(Core.theEmployee);
         //int myValue = this.getIntent().getIntExtra("myValue", 0);
         //Toast.makeText(this, "Employee Created: " + myValue, Toast.LENGTH_LONG).show();
         //Intent returnBag = new Intent();

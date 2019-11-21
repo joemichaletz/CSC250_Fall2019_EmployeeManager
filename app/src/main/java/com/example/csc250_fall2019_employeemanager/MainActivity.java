@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         if(Core.theEmployee != null)
         {
             Toast.makeText(this, "Received result: " + Core.theEmployee.toString() + "", Toast.LENGTH_LONG).show();
-
+            Toast.makeText(this, "Number of Employees: " + Core.theEmployees.size() + "", Toast.LENGTH_LONG).show();
         }
 
     }
